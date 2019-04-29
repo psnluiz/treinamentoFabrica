@@ -1,3 +1,10 @@
+//Exercícios propostos 
+//Escrever uma array que armazena os dias da semana (SeGuNdA, TeRcA,… ) onde as letras alternam entre maiúscula e minúscula.
+//Criar função que recebe como argumento, uma String com no máximo 3 letras e imprime o índice do dia que começa com o argumento informado. A busca deve ser case-insensitive.
+//Criar função que não receba argumento, e retorna um array com os valores dos dias que começam com “S”.
+
+
+
 var dias = ["domingo","segunda feira", "terça feira", "quarta feira", "quinta feira", "sexta feira", "sabado"];
 
 
