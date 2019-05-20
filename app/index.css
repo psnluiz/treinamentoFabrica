@@ -1,0 +1,25 @@
+.jumbotron{
+    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    /* max-width: 300px; */
+    margin-right: auto;
+}
+
+
+.navbar{
+    margin-bottom: 50px;
+}
+
+.content1{
+    text-align: center;
+}
