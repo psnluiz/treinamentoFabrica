@@ -23,15 +23,19 @@
                   <a class="nav-link" ui-sref="login">Login</a>
                 </li>
               </ul>
+              
             </div>
-    </nav>
+            <a ui-sref="login" class="btn btn-info btn-lg navbar-right" ng-hide='state'>
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+            </a>
+         </nav>  
     
     <!-- CONTENT -->
-    <div class='content1'>
-        <h4>
+    <div class='jumbotron loginForm wrapper' id='formContent'>
+        <h4 id="">
             Login view
         </h4>
-        <form 			class="form center-block" ng-controller="authCtrl">  
+        <form 			class="form center-block" ng-controller="loginCtrl">  
             <div 		class="form-group">
                 <input  class="form-control input-lg" type="text"      ng-model="email"    placeholder="Email"   >
             </div>

@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body ui-view >
-
+  
 	   <!-- Navbar  -->
 	   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Authentication App</a>
@@ -29,23 +29,28 @@
               </ul>
             </div>
     </nav>
+    <div id='formContent' class='jumbotron loginForm wrapper'> 
+      <h4>
+        Sign up
+      </h4>
+      <form 			class="form center-block" ng-controller="signUpCtrl" >
+        <div class='form-group'>
+            <input  class="form-control input-lg" type="text"      ng-model="data.name"    placeholder="Name"   >
+        </div>
+        <div 		class="form-group">
+          <input  class="form-control input-lg" type="text"      ng-model="data.email"    placeholder="Email"   >
+        </div>
+        <div 		class="form-group">
+          <input  class="form-control input-lg" type="password"  ng-model="data.password" placeholder="Password">
+        </div>
+        <div 		class="form-group">
+          <button class="btn btn-primary btn-lg btn-block"       ng-click="signUp()" >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
 
-    	<h4>
-			Sign up
-		</h4>
-		<form 			class="form center-block" ng-controller="authCtrl" >
-			<div 		class="form-group">
-				<input  class="form-control input-lg" type="text"      ng-model="email"    placeholder="Email"   >
-			</div>
-			<div 		class="form-group">
-				<input  class="form-control input-lg" type="password"  ng-model="password" placeholder="Password">
-			</div>
-			<div 		class="form-group">
-				<button class="btn btn-primary btn-lg btn-block"       ng-click="signUpUser()" >
-					Sign Up
-				</button>
-			</div>
-		</form>
 
 </body>
 </html>
