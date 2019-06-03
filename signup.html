@@ -1,0 +1,119 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ui-view >
+  <div class="background" ng-controller="isLoggedCtrl">
+
+	   <!-- Navbar  -->
+	   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Authentication App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" ui-sref="home"">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" ui-sref="signup">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" ui-sref="login">Login</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-info btn-lg" ng-show="state">
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+              </a>
+    </nav>
+
+    <div id='formContent' class='jumbotron loginForm wrapper'> 
+      <h4>
+        Sign up
+      </h4>
+      <form 			class="form center-block" ng-controller="signUpCtrl" >
+        <div class='form-group'>
+            <input  class="form-control input-lg" type="text"      ng-model="data.name"    placeholder="Name"   >
+        </div>
+        <div 		class="form-group">
+          <input  class="form-control input-lg" type="text"      ng-model="data.email"    placeholder="Email"   >
+        </div>
+        <div 		class="form-group">
+          <input  class="form-control input-lg" type="password"  ng-model="data.password" placeholder="Password">
+        </div>
+        <div 		class="form-group">
+          <button class="btn btn-primary btn-lg btn-block"       ng-click="signUp()" >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ui-view >
+  
+	   <!-- Navbar  -->
+	   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Authentication App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" ui-sref="home"">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" ui-sref="signup">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" ui-sref="login">Login</a>
+                </li>
+              </ul>
+            </div>
+    </nav>
+    <div id='formContent' class='jumbotron loginForm wrapper'> 
+      <h4>
+        Sign up
+      </h4>
+      <form 			class="form center-block" ng-controller="signUpCtrl" >
+        <div class='form-group'>
+            <input  class="form-control input-lg" type="text"      ng-model="data.name"    placeholder="Name"   >
+        </div>
+        <div 		class="form-group">
+          <input  class="form-control input-lg" type="text"      ng-model="data.email"    placeholder="Email"   >
+        </div>
+        <div 		class="form-group">
+          <input  class="form-control input-lg" type="password"  ng-model="data.password" placeholder="Password">
+        </div>
+        <div 		class="form-group">
+          <button class="btn btn-primary btn-lg btn-block"       ng-click="signUp()" >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+
+
+</body>
+>>>>>>> 5bb7f29018628b19eed0d0a445d0c0e8648aa025
+</html>
